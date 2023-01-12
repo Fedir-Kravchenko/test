@@ -1,0 +1,30 @@
+.advantages {
+  padding: 94px 0;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .advantages__title {
+    margin-bottom: 10px;
+  }
+}
+
+.advantages__icon {
+  @extend %flex-align;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
